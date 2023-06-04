@@ -43,13 +43,13 @@ export const FooterCon = styled.footer`
   font-family: 'Manrope', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0;
   color: #fff;
   z-index: 2;
   @media only screen and (max-width: 600px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
