@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
+import { Box, CircularProgress } from "@mui/material";
 
 export const GradientBackgroundCon = styled.div`
   background: linear-gradient(to right, #0e2a6c, #9b9bfb);
@@ -93,10 +94,12 @@ export const QuoteGeneratorTitle = styled.h2`
   letter-spacing: 2px;
   font-weight: 200;
   font-size: 48px;
+  line-height: 56px;
   text-align: center;
   color: #fff;
-  padding: 0px 20px;
+  padding: 40px 20px 0px;
   position: relative;
+
   @media only screen and (max-width: 600px) {
     font-size: 36px;
     line-height: 44px;
@@ -113,9 +116,22 @@ export const QuoteGeneratorSubTitle = styled.p`
   width: 100%;
   text-align: center;
   padding: 0px 20px;
+
   @media only screen and (max-width: 600px) {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  @media only screen and (min-width: 1081px) {
+    padding: 0px 70px;
+  }
+
+  @media only screen and (min-width: 1225px) {
+    padding: 0px 130px;
+  }
+
+  @media only screen and (min-width: 1396px) {
+    padding: 0px 200px;
   }
 `;
 
@@ -166,4 +182,42 @@ export const GenerateQuoteButtonText = styled.div`
   @media only screen and (max-width: 600px) {
     font-size: 17px;
   }
+`;
+
+export const QuoteGeneratorModalCon = styled(Box)`
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translate()(-50%, -50%);
+  width: 70vw;
+  height: 60vh;
+  box-shadow: 24;
+  /* transition: 0.2s all ease-in-out; */
+
+  background: rgba(193, 193, 255, 0.19);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &:focus {
+    outline: none !important;
+  }
+`;
+
+export const QuoteGeneratorModalInnerCon = styled.div`
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const ModalCircularProgress = styled(CircularProgress)`
+  color: rgba(254, 200, 62, 1) !important;
+  stroke-linecap: round;
+  position: relative;
+  margin-left: -55px;
+  left: 50%;
+  transform: translate(-50%);
 `;
