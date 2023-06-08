@@ -42,7 +42,7 @@ const QuoteGeneratorModal = ({
         const link = document.createElement('a');
         if (typeof blobUrl === 'string') {
             link.href = blobUrl;
-            link.download = 'quotecard.png';
+            link.download = 'quote-card.png';
             link.click();
         }
     }
@@ -50,7 +50,7 @@ const QuoteGeneratorModal = ({
     // Function for Receiving Quote Card
     useEffect(() => {
         if (quoteReceived) {
-            const binaryData = Buffer.from(quoteReceived, 'based64');
+            const binaryData = Buffer.from(quoteReceived, 'base64');
             const blob = new Blob([binaryData], { type: 'image/png' });
             const blobUrlGenerated = URL.createObjectURL(blob);
             console.log(blobUrlGenerated);
@@ -103,9 +103,9 @@ const QuoteGeneratorModal = ({
                         }
 
                         {/* State 2: Quote state fulfilled  */}
-                        {quoteReceived === null &&
+                        {quoteReceived !== null &&
                             <>
-                                <QuoteGeneratorTitle>
+                                <QuoteGeneratorTitle style={{marginTop: "10px"}}>
                                     Download your quote!
                                 </QuoteGeneratorTitle>
                                 <QuoteGeneratorSubTitle style={{marginTop: "20px"}}>

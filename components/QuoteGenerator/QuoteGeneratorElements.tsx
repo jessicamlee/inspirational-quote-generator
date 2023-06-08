@@ -61,11 +61,11 @@ export const FooterLink = styled(Link)`
 export const QuoteGeneratorCon = styled.div`
   min-height: 350px;
   min-width: 350px;
-  height: 60vh;
+  height: 70vh;
   width: 70vw;
   border: 2px solid #ffffff22;
   border-radius: 15px;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -97,7 +97,7 @@ export const QuoteGeneratorTitle = styled.h2`
   line-height: 56px;
   text-align: center;
   color: #fff;
-  padding: 40px 20px 0px;
+  padding: 0px 20px;
   position: relative;
 
   @media only screen and (max-width: 600px) {
@@ -186,13 +186,13 @@ export const GenerateQuoteButtonText = styled.div`
 
 export const QuoteGeneratorModalCon = styled(Box)`
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 15%;
   transform: translate()(-50%, -50%);
   width: 70vw;
   height: 60vh;
   box-shadow: 24;
-  /* transition: 0.2s all ease-in-out; */
+  transition: 0.2s all ease-in-out;
 
   background: rgba(193, 193, 255, 0.19);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -203,6 +203,10 @@ export const QuoteGeneratorModalCon = styled(Box)`
 
   &:focus {
     outline: none !important;
+  }
+
+  @media only screen and (min-width: 601px) {
+    height: 70vh;
   }
 `;
 

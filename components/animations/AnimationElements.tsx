@@ -11,13 +11,12 @@ export const ImageBlobCon = styled.div`
   margin-top: 20px;
   transition: 0.3s all ease-in-out;
   width: fit-content;
-  margin: auto;
+  margin: 50px auto auto;
   height: 100px;
   z-index: 3;
 
   &:hover {
     transform: scale(4.8);
-    /* z-index: 3; */
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 80px 90px rgba(0, 0, 0, 0.6);
     /* height: 100px; */
@@ -67,7 +66,7 @@ export const CenteredLottie = styled(Lottie)`
 export const DownloadQuoteCardConText = styled.div`
   color: #fff;
   font-family: 'Manrope', sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   position: relative;
   width: 100%;
   text-align: center;
