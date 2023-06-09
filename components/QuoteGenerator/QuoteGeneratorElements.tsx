@@ -189,8 +189,10 @@ export const QuoteGeneratorModalCon = styled(Box)`
   top: 10%;
   left: 15%;
   transform: translate()(-50%, -50%);
+  min-height: 350px;
+  min-width: 350px;
   width: 70vw;
-  height: 60vh;
+  height: 70vh;
   box-shadow: 24;
   transition: 0.2s all ease-in-out;
 
@@ -203,10 +205,6 @@ export const QuoteGeneratorModalCon = styled(Box)`
 
   &:focus {
     outline: none !important;
-  }
-
-  @media only screen and (min-width: 601px) {
-    height: 70vh;
   }
 `;
 
