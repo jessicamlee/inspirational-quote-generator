@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inspirational Quote Generator (WIP!)
+This inspirational quote generator is based on freeCodeCamp's Full-Stack Next.js, TypeScript, and AWS Course, guided by [Brian Hough](https://github.com/BrianHHough/inspirational-quote-generator-freeCodeCamp).
+
+Next phase to be updated: 
+- Updated backgrounds for rendered images
+- Keyboard Accessibility
+- Expanded User Experience (beyond a quote generator)
+
+Stay tuned for the next update!
+
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
