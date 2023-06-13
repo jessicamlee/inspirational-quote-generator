@@ -176,7 +176,7 @@ export default function Home() {
               Want to be inspired? Get a quote card with a random inspirational quote provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes API</FooterLink>.
             </QuoteGeneratorSubTitle>
 
-            <GenerateQuoteButton onClick={handleOpenGenerator}>
+            <GenerateQuoteButton onClick={handleOpenGenerator} tabIndex={0}>
               <GenerateQuoteButtonText>
                 Get your Quote
               </GenerateQuoteButtonText>

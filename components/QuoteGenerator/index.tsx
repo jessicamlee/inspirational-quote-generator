@@ -111,7 +111,7 @@ const QuoteGeneratorModal = ({
                                 <QuoteGeneratorSubTitle style={{marginTop: "20px"}}>
                                     View a preview:
                                 </QuoteGeneratorSubTitle>
-                                <ImageBlobCon>
+                                <ImageBlobCon tabIndex={0}>
                                     <ImageBlob 
                                         quoteReceived={quoteReceived}
                                         blobUrl={blobUrl}

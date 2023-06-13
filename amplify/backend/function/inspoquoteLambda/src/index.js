@@ -71,8 +71,8 @@ exports.handler = async (event) => {
         quoteAuthor = quoteData[0].a;
       
         // Image construction
-        const width = 1000;
-        const height = 550;
+        const width = 750;
+        const height = 483;
         const text = quoteText;
         const words = text.split(" ");
         const lineBreak = 4;
@@ -97,28 +97,30 @@ exports.handler = async (event) => {
           <svg width="${width}" height="${height}">
               <style>
                  .title { 
-                   fill: #ffffff; 
+                  fill: #0F2027; 
                   font-size: 20px; 
-                     font-weight: bold;
+                  font-weight: bold;
+                  text-align: center;
                 }
                .quoteAuthorStyles {
-                     font-size: 35px;
-                    font-weight: bold;
-                   padding: 50px;
-              }
+                  font-size: 35px;
+                  font-weight: bold;
+                  padding: 50px;
+                  text-align: center;
+                }
                 .footerStyles {
                   font-size: 20px;
-                     font-weight: bold;
-                    fill: lightgrey;
-                   text-anchor: middle;
-                  font-family: Poppins;
-              }
+                  font-weight: bold;
+                  fill: #0F2027;
+                  text-anchor: middle;
+                  font-family: Verdana;
+                }
               </style>
-              <circle cx="382" cy="76" r="44" fill="rgba(255, 255, 255, 0.155)"/>
-              <text x="382" y="76" dy="50" text-anchor="middle" font-size="90" font-family="Poppins" fill="white">"</text>
+              <circle cx="382" cy="76" r="44" fill="rgba(255, 255, 255, 0.5)"/>
+              <text x="382" y="76" dy="50" text-anchor="middle" font-size="90" font-family="Verdana" fill="#0F2027">"</text>
               <g>
                   <rect x="0" y="0" width="${width}" height="auto"></rect>
-                     <text id="lastLineOfQuote" x="375" y="120" font-family="Poppins" font-size="35" fill="white" text-anchor="middle">
+                     <text id="lastLineOfQuote" x="375" y="120" font-family="Verdana" font-size="35" fill="#0F2027" text-anchor="middle">
                         ${tspanElements}
                     <tspan class="quoteAuthorStyles" x="375" dy="1.8em">- ${quoteAuthor}</tspan>
                </text>
@@ -131,10 +133,12 @@ exports.handler = async (event) => {
       
         //  Add background images for the svg creation
         const backgroundImages = [
-          "backgrounds/SoundCloud.png",
-          "backgrounds/Timber.png",
-          "backgrounds/Vine.png",
-          "backgrounds/VisionsofGrandeur.png",
+          "backgrounds/Anamnisar.jpg",
+          "backgrounds/DirtyFog.jpg",
+          "backgrounds/Venice.jpg",
+          "backgrounds/AzurLane.jpg",
+          "backgrounds/DigitalWater.jpg",
+          "backgrounds/Scooter.jpg",
         ];
       
         const randomIndex = Math.floor(Math.random() * backgroundImages.length);

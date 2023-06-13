@@ -13,6 +13,7 @@ const AnimatedDownloadButton = ({handleDownload}: AnimatedDownloadButtonProps) =
   return (
     <DownloadQuoteCardCon 
       onClick={handleDownload}
+      tabIndex={0}
     >
       <CenteredLottie
         loop

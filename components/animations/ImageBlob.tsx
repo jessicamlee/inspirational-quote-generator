@@ -43,7 +43,7 @@ const ImageBlob = ({
       src={blobUrl} 
       alt="Generated quote card image"
       width={150}
-      height={100} 
+      height={100}
     />
   )
 }
