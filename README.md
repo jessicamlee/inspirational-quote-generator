@@ -1,9 +1,9 @@
-# Inspirational Quote Generator (1st Iteration is Live!)
+# Inspirational Quote Generator 
+__*1st Iteration is Live! 🌱 [Inspiration Quote Generator](https://prod.d28hmooal1ffyl.amplifyapp.com/) (name to be updated)*__ <br>
+
 This inspirational quote generator project is based on freeCodeCamp's Full-Stack Next.js, TypeScript, and AWS Course, guided by [Brian Hough](https://github.com/BrianHHough/inspirational-quote-generator-freeCodeCamp), with quotes provided by [ZenQuotesAPI](https://zenquotes.io/) and hype4academy's [Glassmorphism CSS Generator](https://hype4.academy/tools/glassmorphism-generator).
 
-Check out the live site: [Inspiration Quote Generator](https://prod.d28hmooal1ffyl.amplifyapp.com/) (name to be updated)
-
-☑ In addition to setting up the application, the first iteration included a few priorities I appreciate for an enjoyable user experience: 
+#### 🔮 The first iteration included a few additional features for a different user experience: 
 - [x] Updated backgrounds for rendered images
 - [x] Basic/Necessary Keyboard Accessibility
 - [x] Simple styles for a responsive experience
