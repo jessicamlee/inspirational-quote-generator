@@ -84,7 +84,7 @@ export default function Home() {
       setNumberOfQuotes(receivedNumberOfQuotes);
 
     } catch (error) {
-      console.log('error getting quote data', error)
+      console.log('error getting quote data', error);
     }
   }
 
